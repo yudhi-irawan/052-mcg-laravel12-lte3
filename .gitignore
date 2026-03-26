@@ -27,7 +27,7 @@ yarn-error.log
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
+#/vendor
 Homestead.json
 Homestead.yaml
 Thumbs.db
