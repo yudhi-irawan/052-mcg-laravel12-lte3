@@ -107,12 +107,12 @@ goto folder .\052-mcg-laravel12-lte3\public
 
 
 goto folder .\052-mcg-laravel12-lte3\resources\views
-- copy folder .\resources\views from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master/resources
+- copy folder .\views from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master/resources
 
 
 goto rooot folder .\052-mcg-laravel12-lte3
-- create folder .\052-mcg-laravel12-lte3\MCG
-- copy folder .\052-mcg-laravel12-lte3\MCG from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master
+- create folder .\MCG
+- copy folder .\MCG from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master
 
 
 goto folder .\052-mcg-laravel12-lte3\MCG
