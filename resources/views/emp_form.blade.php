@@ -83,7 +83,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="insertnew">Reserved Words</label>
+									<label for="insertnew">Insert Words</label>
 									<!-- three-2020 -->
 									<select id="insertnew" name="insertnew" class="form-control select2">
 										<option value="">-Select -</option>
