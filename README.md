@@ -1,5 +1,5 @@
 # 052-mcg-laravel12-lte3
-
+<pre>
 
 
 ------------------------------------------
@@ -137,3 +137,4 @@ run: php artisan migrate
 
 run server: php artisan serve
 run in browser: http://127.0.0.1:8000/
+</pre>
