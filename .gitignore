@@ -1,44 +1,7 @@
-checkstatic.txt
-~catatan-github.txt
-ErrorLog.htm
-#
-/.phpunit.cache
-#.env
-npm-debug.log
-yarn-error.log
-*.exe
-#
 *.log
-.DS_Store
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
 /node_modules
-#/public/build
-#/public/hot
-#/vendor
-Homestead.json
-Homestead.yaml
+/public/build
 Thumbs.db
-
-
-# Abaikan semua isi storage
-/storage/*
-/public/storage
-
-# Tapi izinkan folder public uploads tertentu
-!storage/app/public
-!storage/app/public/example.jpg
-!storage/app/public/sources/*
-!storage/app/public/uploads/*
-
-
+*.exe
+~catatan-github.txt
 

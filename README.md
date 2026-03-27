@@ -58,9 +58,6 @@ Would you like to run npm install and npm run build? (yes/no) [yes]:
 -4-
 cd example-app
 
-create link ke storage: 
-php artisan storage:link
-
 run server:
 php artisan serve
 exit from server: Ctrl+C
@@ -70,11 +67,28 @@ exit from server: Ctrl+C
 ---> 2 <----------------------------------
 ------------------------------------------
 
+create folder: 052-mcg-laravel12-lte3
 
 copy from folder: example-app
 to folder: 052-mcg-laravel12-lte3
 
+goto folder .\052-mcg-laravel12-lte3\storage\app\public
+- create folder: .\storage\app\public\sources
+- create folder: .\storage\app\public\uploads
+
+
 goto folder: 052-mcg-laravel12-lte3
+
+dir public
+create link ke storage: 
+php artisan storage:link
+dir public
+
+run server:
+php artisan serve
+run in browser: http://127.0.0.1:8000/storage/sources/sample_01.png
+exit from server: Ctrl+C
+
 
 run your favourite editor:
 code .
@@ -102,17 +116,15 @@ for pgSQL:
 
 goto folder .\052-mcg-laravel12-lte3\public
 - copy folder .\public\assets from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master/public
-- create folder: .\public\storage\sources
-- create folder: .\public\storage\uploads
 
 
 goto folder .\052-mcg-laravel12-lte3\resources\views
-- copy folder .\views from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master/resources
+- copy folder .\resources\views from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master/resources
 
 
 goto rooot folder .\052-mcg-laravel12-lte3
-- create folder .\MCG
-- copy folder .\MCG from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master
+- create folder .\052-mcg-laravel12-lte3\MCG
+- copy folder .\052-mcg-laravel12-lte3\MCG from: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3/tree/master
 
 
 goto folder .\052-mcg-laravel12-lte3\MCG
@@ -137,4 +149,6 @@ run: php artisan migrate
 
 run server: php artisan serve
 run in browser: http://127.0.0.1:8000/
+
+
 </pre>
