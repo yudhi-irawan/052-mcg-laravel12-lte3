@@ -84,6 +84,11 @@ create link ke storage:
 php artisan storage:link
 dir public
 
+if ERROR:
+rmdir /S /Q public\storage
+php artisan storage:link
+
+
 run server:
 php artisan serve
 run in browser: http://127.0.0.1:8000/storage/sources/sample_01.png
