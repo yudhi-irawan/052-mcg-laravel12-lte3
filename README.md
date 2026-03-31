@@ -2,6 +2,9 @@
 <pre>
 
 
+INSTALL FROM SOURCE
+===================
+
 ------------------------------------------
 ---> 1 <----------------------------------
 ------------------------------------------
@@ -25,7 +28,7 @@ composer global require laravel/installer
 
 -3-
 laravel new example-app
-Which starter kit would you lke to install? [none]:
+Which starter kit would you like to install? [none]:
 [none    ] None
 [react   ] React
 [vue     ] Vue
@@ -154,6 +157,48 @@ run: php artisan migrate
 
 run server: php artisan serve
 run in browser: http://127.0.0.1:8000/
+
+
+
+
+
+
+INSTALL FROM GITHUB-SAMPLE
+==========================
+
+run xampp
+run phpmyadmin
+Create
+	Database: mcg_db
+	Username: root
+	Password: 
+	
+	
+goto: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3
+click <> Code
+click Download ZIP
+unzip 052-mcg-laravel12-lte3-master.zip to folder c:\xampp\htdocs
+rename folder from c:\xampp\htdocs\052-mcg-laravel12-lte3-master to c:\xampp\htdocs\052-mcg-laravel12-lte3
+
+goto folder .\052-mcg-laravel12-lte3\MCG\sql
+run phpmyadmin
+click mcg_db
+
+click tab SQL
+copy paste script: 1_merge_table_all.sql
+click Go
+
+click tab SQL
+copy paste script: 2_merge_sql_all.sql
+click Go
+
+
+goto root folder .\052-mcg-laravel12-lte3
+run: php artisan migrate
+
+run server: php artisan serve
+run in browser: http://127.0.0.1:8000/
+
 
 
 </pre>
