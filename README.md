@@ -2,6 +2,48 @@
 <pre>
 
 
+
+INSTALL FROM GITHUB-SAMPLE
+==========================
+
+run xampp
+run phpmyadmin
+Create
+	Database: mcg_db
+	Username: root
+	Password: 
+	
+	
+goto: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3
+click <> Code
+click Download ZIP
+unzip 052-mcg-laravel12-lte3-master.zip to folder c:\xampp\htdocs
+rename folder from c:\xampp\htdocs\052-mcg-laravel12-lte3-master to c:\xampp\htdocs\052-mcg-laravel12-lte3
+
+goto folder .\052-mcg-laravel12-lte3\MCG\sql
+run phpmyadmin
+click mcg_db
+
+click tab SQL
+copy paste script: 1_merge_table_all.sql
+click Go
+
+click tab SQL
+copy paste script: 2_merge_sql_all.sql
+click Go
+
+
+mode CMD:
+goto root folder .\052-mcg-laravel12-lte3
+run: php artisan migrate
+
+run server: php artisan serve
+run in browser: http://127.0.0.1:8000/
+
+
+
+
+
 INSTALL FROM SOURCE
 ===================
 
@@ -158,46 +200,6 @@ run: php artisan migrate
 run server: php artisan serve
 run in browser: http://127.0.0.1:8000/
 
-
-
-
-
-
-INSTALL FROM GITHUB-SAMPLE
-==========================
-
-run xampp
-run phpmyadmin
-Create
-	Database: mcg_db
-	Username: root
-	Password: 
-	
-	
-goto: https://github.com/yudhi-irawan/052-mcg-laravel12-lte3
-click <> Code
-click Download ZIP
-unzip 052-mcg-laravel12-lte3-master.zip to folder c:\xampp\htdocs
-rename folder from c:\xampp\htdocs\052-mcg-laravel12-lte3-master to c:\xampp\htdocs\052-mcg-laravel12-lte3
-
-goto folder .\052-mcg-laravel12-lte3\MCG\sql
-run phpmyadmin
-click mcg_db
-
-click tab SQL
-copy paste script: 1_merge_table_all.sql
-click Go
-
-click tab SQL
-copy paste script: 2_merge_sql_all.sql
-click Go
-
-
-goto root folder .\052-mcg-laravel12-lte3
-run: php artisan migrate
-
-run server: php artisan serve
-run in browser: http://127.0.0.1:8000/
 
 
 
