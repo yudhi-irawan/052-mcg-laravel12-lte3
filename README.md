@@ -35,8 +35,18 @@ click Go
 
 mode CMD:
 goto root folder .\052-mcg-laravel12-lte3
-run: php artisan migrate
 
+dir public
+create link ke storage: 
+php artisan storage:link
+dir public
+
+if ERROR:
+rmdir /S /Q public\storage
+php artisan storage:link
+dir public
+
+run: php artisan migrate
 run server: php artisan serve
 run in browser: http://127.0.0.1:8000/
 
@@ -132,7 +142,7 @@ dir public
 if ERROR:
 rmdir /S /Q public\storage
 php artisan storage:link
-
+dir public
 
 run server:
 php artisan serve
